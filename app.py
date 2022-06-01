@@ -32,7 +32,7 @@ def today_working_hours():
                     "ending_hour": ending_hour.json()['response']})
 
 
-@app.route("/", methods=["GET"])
+@app.route("/docker", methods=["GET"])
 def today_working_hours_docker():
     url = os.environ['time_service_url_docker']
 
